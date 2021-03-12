@@ -1,0 +1,20 @@
+mkdir Repositório; cd Repositório
+
+git config --global user.name "Rafael-Marinho"
+
+git config --global user.email "rafael.andrade23@fatec.sp.gov.br"
+
+git init
+Initialized empty Git repository in /mnt/Linux-HDD/home/marinho/Área de Trabalho/ /INPE/Disciplinas/Introdução à Programação com Dados Geoespaciais/Repositório/.git/
+
+touch README.md
+
+vi Instruções.txt
+
+git add *
+
+git commit -m "Criação do repositório"
+
+git remote add origin https://github.com/Rafael-Marinho/CAP-419
+
+git push
