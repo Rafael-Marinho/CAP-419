@@ -1,20 +1,35 @@
+# Criação da pasta na minha máquina:
 mkdir Repositório; cd Repositório
 
+# Configuração do Git:
 git config --global user.name "Rafael-Marinho"
-
 git config --global user.email "rafael.andrade23@fatec.sp.gov.br"
 
-git init
-Initialized empty Git repository in /mnt/Linux-HDD/home/marinho/Área de Trabalho/ /INPE/Disciplinas/Introdução à Programação com Dados Geoespaciais/Repositório/.git/
-
-touch README.md
-
+# Criação desse arquivo:
 vi Instruções.txt
 
-git add *
 
+# Instruções que irei executar (se você está lendo esse arquivo no GitHub, é porque funcionou):
+
+echo "# CAP-419" >> README.md
+
+# Inicia o repositório:
+git init
+
+# Adiciona o README:
+git add README.md
+
+# Adiciona esse arquivo:
+git add Instruções.txt
+
+# Define o primeiro commit:
 git commit -m "Criação do repositório"
 
-git remote add origin https://github.com/Rafael-Marinho/CAP-419
+# Define a branch prinicpal:
+git branch -M main
 
-git push
+# Conecta com o repositório:
+git remote add origin https://github.com/Rafael-Marinho/CAP-419.git
+
+# Sobe o commit pro repositório:
+git push -u origin main
